@@ -4,7 +4,5 @@ jobs:
   listen:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v6
       - name: Listen to Issues
         run: echo "${{ toJSON(github.event) }}"
